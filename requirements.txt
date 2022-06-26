@@ -33,6 +33,7 @@ tensorflowjs>=3.9.0  # TF.js export
 # albumentations>=1.0.3
 # Cython  # for pycocotools https://github.com/cocodataset/cocoapi/issues/172
 # pycocotools>=2.0  # COCO mAP
+flask
 
 # roboflow
 thop  # FLOPs computation
