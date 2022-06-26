@@ -1,0 +1,14 @@
+path: ../data # dataset root dir
+train: images  # train images (relative to 'path') 128 images
+val: images  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 1  # number of classes
+names: ['firearm']  # class names
+
+# Hyperparameters for COCO training from scratch
+# python train.py --batch 40 --cfg yolov5m.yaml --weights '' --data coco.yaml --img 640 --epochs 300
+# See tutorials for hyperparameter evolution https://github.com/ultralytics/yolov5#tutorials
+
+

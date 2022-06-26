@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firearms detector</title>
+      <style>
+        hr.new1 {
+        border-top: 1px solid black;
+        }
+
+        .myCustomImages {
+         max-width: 90%;
+         max-height: 90%;
+        }
+
+      </style>
+
+  </head>
+  <body>
+    <table align="center" border=0>
+        <tr><td align=left><a href="https://www.eastern.edu/"><img  src="/static/logo2.jpg" width="900" height="100"></a></td>
+        <td align=middle><img   src="/static/nombre.jpg" width="250" height="100"></td></tr>
+
+        </td></tr>
+    </table>
+    <hr class="new1"><br></hr>
+    <table align="center" border="0">
+        <tr><td align="center" ><font color="#8c1c40"><b>PICTURES</b></font></td><td rowspan="2" width="30"><br></td><td align="center"><font color="#8c1c40"><b>WEBCAM</font></td></tr>
+       <tr><td>
+       <table border="1"><tr><td>
+        <form
+          action="http://127.0.0.1:9292/upload"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="file" name="file" />
+          <input type="submit" />
+        </form></td></tr>
+       </table>
+        </td>
+        <td>
+       <table border="1"><tr><td>
+       <form
+          action="http://127.0.0.1:9292/video"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+
+          <input type="submit" value="open webcam"/>
+        </form>
+       </td></tr>
+       </td></tr>
+      </table>
+    </td></tr>
+    </table>
+<hr class="new1" ><br></hr>
+  <table border=0 align="center">
+
+      <!--<tr><td colspan="2" align="center"><br><b><font size="5" color="#8c1c40">IMAGES</font><br><br></b></td></tr>-->
+       <tr><td align="center"><b><font size="5" color="#8c1c40">ORIGINAL IMAGE</font><td align="center"><b><font size="5" color="#8c1c40">LABELED IMAGE</b></td></tr>
+        <tr><td align="right"><img src="{{file_clean}}" class="myCustomImages"></td>
+            <td align="left"><img src="{{file_tag}}" class="myCustomImages"></td></tr>
+  </table>
+
+  </body>
+</html>
