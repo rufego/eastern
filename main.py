@@ -54,7 +54,7 @@ def uploadfile():
         shutil.copyfile(source_file, dest_file)
 
 # We return the flow to the index.hmtl page, where we are going to show the 2 files, the uploaded and the labeled.
-        return render_template('index.html', file_clean = '/static/'+fichero.filename, file_tag=dest_file)
+        return render_template('index.html', file_clean = file, file_tag=dest_file)
 
 # For the "/" page we only call the index page with 1 picture with and without the label, by default.
 @app.route('/')
